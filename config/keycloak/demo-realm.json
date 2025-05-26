@@ -1,0 +1,30 @@
+{
+  "realm": "demo",
+  "enabled": true,
+  "users": [
+    {
+      "username": "testuser",
+      "enabled": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "testpassword"
+        }
+      ]
+    }
+  ],
+  "clients": [
+    {
+      "clientId": "flask-client",
+      "enabled": true,
+      "secret": "secret",
+      "protocol": "openid-connect",
+      "publicClient": false,
+      "redirectUris": [
+        "http://localhost:5000/*"
+      ],
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": true
+    }
+  ]
+}
